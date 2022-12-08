@@ -1,4 +1,4 @@
-# Esercitazione PHP
+# git
 
 ## Challenge
 >Immagina di costruire un sistema di rilevazione presenze per il personale aziendale.
@@ -44,24 +44,27 @@ Il codice HTML verrà creato per due file (index.php e admin.php) dal seguente m
     - csv.php
     - database.php
     - Utente.php
+
     </details>
 1.  Istallare e configurare la database
     - Si fornisce il file "traccia.sql"  per creare la database che prevede il codice per creare la tabella "traccia", 7 utenti, e 18 registri temporali di acceso/uscite.
     <details><summary>Più informazione</summary>
-    Nomi Utenti: 
-       + ABC
-       + DFG
-       + 123
-       + 456
-       + A1B1
-       + Utente1
-       + Utente2
+
+    Nomi Utenti disponibili: 
+       + ABC    (con rilevazioni)
+       + DFG    (con rilevazioni)
+       + 123        (senza dati)
+       + 456        (senza dati)
+       + A1B1   (con rilevazioni)
+       + Utente1    (senza dati)
+       + Utente2    (senza dati)
+
     Struttura:
-        `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-        `utente` char(8) DEFAULT NULL,
-        `ora` datetime DEFAULT NULL,
-        `estado` int(1) DEFAULT NULL,
-        UNIQUE KEY `id` (`id`)
+       + `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+       + `utente` char(8) DEFAULT NULL,
+       + `ora` datetime DEFAULT NULL,
+       + `estado` int(1) DEFAULT NULL,
+       + UNIQUE KEY `id` (`id`)
 
 
     </details>
